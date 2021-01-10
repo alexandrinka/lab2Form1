@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Создание форм</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>ЗАО Птицефабрика №1</h1>
+
+    <form enctype="multipart/form-data" action="https://echo.htmlacademy.ru/courses" method="post">
+      
+	  <table>
+	  <tr>
+	  <td class="right"><label for="surname">Фамилия</label></td>
+	  <td><input type="text" name="surname" id="surname"></td>
+	  </tr>
+	  
+	  <tr>
+	  <td class="right"><label for="IO">Инициалы</label></td>
+	  <td><input type="text" name="IO" id="IO"></td>
+	  </tr>
+	  
+	  <tr>
+	  <td class="right"><label for="password">Пароль</label></td>
+	  <td><input type="password" name="password" id="password"></td>
+	  </tr>
+	  
+	  
+	  <tr>
+	  <td class="right"><label for="adres">Адрес получателя</label></td>
+	  <td><input type="text" name="adres" id="adres" size="50"><br></td>
+	  </tr>
+	  
+	  <tr>
+	  <td class="right"><label for="count">Количество</label></td>
+	  <td><input type="text" name="count" id="count" size="5"><br></td>
+	  </tr>
+	  
+	  <tr>
+	  <td class="right"><label for="type">Тип</label></td>
+	  <td>
+	  <select name="type">
+			<option value="chicken">Куриные</option>
+			<option value="chicken">Куриные1</option>
+	  </select>
+	  
+	   <select name="type">
+			<option value="Otb">Отборные</option>
+			<option value="Otb1">Отборные1</option>
+	  </select>			
+	 </td>
+	 </tr>
+	 
+	 <tr>
+	  <td class="right"><label for="dostavka">Доставка</label></td>
+	  <td>
+	  <input type="radio" name="dostavka" id="dostavka" value="post"> Почтой
+	  <input type="radio" name="dostavka" id="dostavka" value="electr"> Электронно
+	  <input type="radio" name="dostavka" id="dostavka" value="kurer"> Курьером
+	  </td>
+	  </tr>
+	  
+	  <tr>
+	  <td class="right"><label for="nakl">Требуется накладная</label></td>
+	  <td><input type="checkbox" name="nakl" id="nakl"></td>
+	  </tr>
+	  
+	  <tr>
+	  <td class="right"><label for="count">Дополнительная информация</label></td>
+	  <td><textarea rows ="3" cols ="60"></textarea></td>
+	  </tr>
+	  
+	  <tr>
+	  <td class="right"><input type="submit" value="Заказать"></td>
+	  <td><input type="reset" value="Отменить"></td>
+	  </tr>
+	  
+	</table>	
+    </form>
+  </body>
+</html>
